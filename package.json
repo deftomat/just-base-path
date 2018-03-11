@@ -1,6 +1,6 @@
 {
   "name": "just-location-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Returns a location base and base path",
   "author": "Tomas Szabo <tomas.szabo@deftomat.com>",
   "license": "MIT",
@@ -12,7 +12,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "postcommit": "git update-index -g",
-    "prepublish": "tsc",
+    "prepublishOnly": "tsc",
     "formatting:lint": "tslint --project tsconfig.json",
     "formatting:fix":
       "tslint --config tslint.fix.json --project tsconfig.json --fix && prettier --write **/*.{js,jsx,ts,tsx,css,scss,html,json,yml,graphql,md}",
