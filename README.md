@@ -1,5 +1,7 @@
 # Just Location Base
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 A simple package which returns a location base and base path.
 
 ## Why
