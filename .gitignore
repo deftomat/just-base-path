@@ -1,0 +1,7 @@
+.idea
+node_modules
+coverage
+yarn-error.log
+__diff_output__
+**/build/*
+yarn.lock
