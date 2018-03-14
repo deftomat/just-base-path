@@ -39,14 +39,3 @@ import { getBase, getBasePath } from 'just-location-base';
 const base = getBase(); // "http://localhost/dashboard"
 const basePath = getBasePath(); // "/dashboard"
 ```
-
-## Additional info
-
-Both functions will cache a returned value to avoid querying a base tag multiple times
-as it's quite unusual to change a base during an application life.
-However, to clear the cache, you can use:
-
-```
-const base = getBase({ clearCache: true });
-const basePath = getPathBase({ clearCache: true });
-```

@@ -1,6 +1,6 @@
 {
   "name": "just-location-base",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Returns a location base and base path",
   "author": "Tomas Szabo <tomas.szabo@deftomat.com>",
   "license": "MIT",

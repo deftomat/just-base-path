@@ -6,8 +6,8 @@
  *
  *   getBase(); // "http://localhost/dashboard"
  */
-export function getBase(options?: Options): string {
-  const base = findBaseTag(options);
+export function getBase(): string {
+  const base = findBaseTag();
   return (base && base.href) || '';
 }
 
@@ -19,19 +19,11 @@ export function getBase(options?: Options): string {
  *
  *   getBasePath(); // "/dashboard"
  */
-export function getBasePath(options?: Options): string {
-  const base = findBaseTag(options);
+export function getBasePath(): string {
+  const base = findBaseTag();
   return (base && base.getAttribute('href')) || '';
 }
 
-let baseTag: HTMLBaseElement | null;
-function findBaseTag(options?: Options): HTMLBaseElement | null {
-  if (baseTag === undefined || (options != null && options.clearCache === true)) {
-    baseTag = document.querySelector('base') || null;
-  }
-  return baseTag;
-}
-
-export interface Options {
-  clearCache: boolean;
+function findBaseTag(): HTMLBaseElement | null {
+  return document.querySelector('base');
 }
