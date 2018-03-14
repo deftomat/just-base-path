@@ -14,12 +14,7 @@
     "member-access": false,
     "member-ordering": [
       {
-        "order": [
-          "instance-field",
-          "instance-method",
-          "static-field",
-          "static-method"
-        ]
+        "order": ["instance-field", "instance-method", "static-field", "static-method"]
       },
       true
     ],

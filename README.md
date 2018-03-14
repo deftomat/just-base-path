@@ -34,7 +34,7 @@ HTML:
 JavaScript:
 
 ```js
-import { getBase, getBasePath } from "just-location-base";
+import { getBase, getBasePath } from 'just-location-base';
 
 const base = getBase(); // "http://localhost/dashboard"
 const basePath = getBasePath(); // "/dashboard"

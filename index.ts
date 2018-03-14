@@ -8,7 +8,7 @@
  */
 export function getBase(options?: Options): string {
   const base = findBaseTag(options);
-  return (base && base.href) || "";
+  return (base && base.href) || '';
 }
 
 /**
@@ -21,16 +21,13 @@ export function getBase(options?: Options): string {
  */
 export function getBasePath(options?: Options): string {
   const base = findBaseTag(options);
-  return (base && base.getAttribute("href")) || "";
+  return (base && base.getAttribute('href')) || '';
 }
 
 let baseTag: HTMLBaseElement | null;
 function findBaseTag(options?: Options): HTMLBaseElement | null {
-  if (
-    baseTag === undefined ||
-    (options != null && options.clearCache === true)
-  ) {
-    baseTag = document.querySelector("base") || null;
+  if (baseTag === undefined || (options != null && options.clearCache === true)) {
+    baseTag = document.querySelector('base') || null;
   }
   return baseTag;
 }

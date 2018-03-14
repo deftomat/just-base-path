@@ -16,8 +16,7 @@
     "formatting:lint": "tslint --project tsconfig.json",
     "formatting:fix":
       "tslint --config tslint.fix.json --project tsconfig.json --fix && prettier --write '**/*.{js,jsx,ts,tsx,css,scss,html,json,yml,graphql,md}'",
-    "formatting:check-rule-conflicts":
-      "tslint-config-prettier-check ./tslint.json"
+    "formatting:check-rule-conflicts": "tslint-config-prettier-check ./tslint.json"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -25,10 +24,7 @@
       "prettier --write",
       "git add"
     ],
-    "*.{js,jsx,css,scss,html,json,yml,graphql,md}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.{js,jsx,css,scss,html,json,yml,graphql,md}": ["prettier --write", "git add"]
   },
   "devDependencies": {
     "@types/node": "^8.9.0",
