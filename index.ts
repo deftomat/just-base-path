@@ -8,7 +8,13 @@
  */
 export function getBase(): string {
   const base = findBaseTag();
-  return (base && base.href) || '';
+
+  if (base == null) {
+    const location = window.location;
+    return `${location.protocol}//${location.host}`;
+  }
+
+  return base.href;
 }
 
 /**
