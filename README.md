@@ -27,7 +27,7 @@ HTML:
 
 ```html
 <head>
-    <base href="/dashboard">
+  <base href="/dashboard">
 </head>
 ```
 
