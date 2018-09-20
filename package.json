@@ -12,11 +12,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "postcommit": "git update-index -g",
-    "prepublishOnly": "tsc",
-    "formatting:lint": "tslint --project tsconfig.json",
-    "formatting:fix":
-      "tslint --config tslint.fix.json --project tsconfig.json --fix && prettier --write '**/*.{js,jsx,ts,tsx,css,scss,html,json,yml,graphql,md}'",
-    "formatting:check-rule-conflicts": "tslint-config-prettier-check ./tslint.json"
+    "prepublishOnly": "tsc"
   },
   "files": ["build/*"],
   "lint-staged": {
