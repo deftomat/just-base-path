@@ -4,7 +4,7 @@
 
 A simple package which returns a location base and base path.
 
-## Why
+## Why ?
 
 When you add `<base href="/dashboard">` to your HTML,
 it is quite tedious to get a base or base path inside your JS code.
