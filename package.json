@@ -14,6 +14,7 @@
     "postcommit": "git update-index -g",
     "prepublishOnly": "tsc"
   },
+  "sideEffects": false,
   "files": ["build/*"],
   "lint-staged": {
     "*.{ts,tsx}": [
